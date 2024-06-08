@@ -13,7 +13,8 @@ class UserCourse extends Pivot
     public $timestamps = false;
 
     protected $fillable = [
-        'course_id',
-        'user_specific_id'
+        'user_specific_id',
+        'course_id'
+        
     ];
 }
