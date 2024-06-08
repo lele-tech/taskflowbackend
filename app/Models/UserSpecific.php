@@ -5,19 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class UserSpecific extends Model
 {
     use HasFactory;
 
-    protected $table = 'users';
+    protected $table = 'users_specific';
     protected $primaryKey = 'user_specific_id';
     public $timestamps = false;
 
     protected $fillable = [
-        'user_level_id',
         'email',
-        'username',
-        'password'
+        'user_name',
+        'password',
+        'user_level_id'
     ];
 
     public function userLevel()
