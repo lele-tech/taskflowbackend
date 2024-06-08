@@ -23,7 +23,7 @@ return new class extends Migration
             
             $table->foreignId('tag_id')->constrained('tags');
             $table->foreignId('course_id')->constrained('courses');
-            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('user_specific_id')->constrained('users_specific');
         });
 
     }
